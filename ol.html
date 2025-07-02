@@ -1,35 +1,63 @@
-<!DOCTYPE html>
-<html>
-<head>
-  <title>Registration Form</title>
-</head>
-<body>
+Here's a concise HTML code to replicate the given table layout:
 
-<h2>User Registration</h2>
-<form action="/submit" method="post">
-  <label for="fname">First Name:</label><br>
-  <input type="text" id="fname" name="fname" required><br><br>
+<table border="1" cellspacing="0" cellpadding="5">
+  <tr>
+    <th rowspan="2">Student</th>
+    <th colspan="4">Exam</th>
+    <th colspan="4">2nd Exam</th>
+    <th colspan="2">Final Grade</th>
+  </tr>
+  <tr>
+    <th>Q1<br>8</th>
+    <th>Q2<br>7</th>
+    <th>Q3<br>5</th>
+    <th>Grade</th>
+    <th>Q1<br>6</th>
+    <th>Q2<br>7</th>
+    <th>Q3<br>8</th>
+    <th>Grade</th>
+    <th>NR</th>
+    <th>R</th>
+  </tr>
+  <tr>
+    <td>80549061<br>John</td>
+    <td>70%</td>
+    <td>100%</td>
+    <td>100%</td>
+    <td>17.6</td>
+    <td> </td>
+    <td> </td>
+    <td> </td>
+    <td> </td>
+    <td>17.6</td>
+    <td>18</td>
+  </tr>
+  <tr>
+    <td>80549062<br>Mary</td>
+    <td>10%</td>
+    <td>50%</td>
+    <td>50%</td>
+    <td>6.8</td>
+    <td>100%</td>
+    <td>100%</td>
+    <td>50%</td>
+    <td>16.5</td>
+    <td>16.5</td>
+    <td>17</td>
+  </tr>
+  <tr>
+    <td>80549063<br>Claire</td>
+    <td> </td>
+    <td> </td>
+    <td> </td>
+    <td> </td>
+    <td>50%</td>
+    <td>50%</td>
+    <td>50%</td>
+    <td>10.0</td>
+    <td>10.0</td>
+    <td>10</td>
+  </tr>
+</table>
 
-  <label for="lname">Last Name:</label><br>
-  <input type="text" id="lname" name="lname" required><br><br>
-
-  <label for="username">Username:</label><br>
-  <input type="text" id="username" name="username" required><br><br>
-
-  <label for="password">Password:</label><br>
-  <input type="password" id="password" name="password" required><br><br>
-
-  <label for="email">Email:</label><br>
-  <input type="email" id="email" name="email" required><br><br>
-
-  <label for="mobile">Mobile No:</label><br>
-  <input type="tel" id="mobile" name="mobile" required><br><br>
-
-  <label for="city">City:</label><br>
-  <input type="text" id="city" name="city" required><br><br>
-
-  <input type="submit" value="Register">
-</form>
-
-</body>
-</html>
+This code preserves the table's structure using rowspan and colspan effectively while keeping it clean and readable.
