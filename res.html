@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Responsive Flexbox Layout</title>
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      padding: 20px;
+      background-color: #f0f0f0;
+    }
+
+    h1, h2 {
+      text-align: center;
+      margin: 0;
+    }
+
+    .container {
+      display: flex;
+      flex-wrap: wrap;
+      max-width: 1000px;
+      margin: 20px auto;
+    }
+
+    .box {
+      padding: 20px;
+      text-align: center;
+      color: white;
+      min-height: 60px;
+      flex-grow: 1;
+    }
+
+    .blue { background-color: #0077cc; }
+    .orange { background-color: #f7901e; }
+    .green { background-color: #60bd68; }
+    .red { background-color: #f15854; }
+
+    /* Layout structure */
+    .row {
+      display: flex;
+      flex-wrap: wrap;
+      width: 100%;
+    }
+
+    .header {
+      flex: 1 1 50%;
+    }
+
+    .banner {
+      flex: 1 1 100%;
+    }
+
+    .section {
+      flex: 1 1 33.33%;
+    }
+
+    .footer {
+      flex: 1 1 25%;
+    }
+
+    /* Responsive */
+    @media (max-width: 768px) {
+      .header, .section {
+        flex: 1 1 100%;
+      }
+
+      .footer {
+        flex: 1 1 50%;
+      }
+    }
+
+    @media (max-width: 480px) {
+      .footer {
+        flex: 1 1 100%;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <h1>Responsive Web Design</h1>
+  <h2>A Working Example</h2>
+
+  <div class="container">
+    <div class="row">
+      <div class="box blue header">Header 1</div>
+      <div class="box blue header">Header 2</div>
+    </div>
+
+    <div class="row">
+      <div class="box orange banner">Banner</div>
+    </div>
+
+    <div class="row">
+      <div class="box green section">Section 1</div>
+      <div class="box green section">Section 2</div>
+      <div class="box green section">Section 3</div>
+    </div>
+
+    <div class="row">
+      <div class="box red footer">Footer 1</div>
+      <div class="box red footer">Footer 2</div>
+      <div class="box red footer">Footer 3</div>
+      <div class="box red footer">Footer 4</div>
+    </div>
+  </div>
+
+</body>
+</html>
