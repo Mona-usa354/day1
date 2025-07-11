@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Bloom</title>
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+      font-family: Arial, sans-serif;
+    }
+    body {
+      background-color: #f4f4f4;
+    }
+    header {
+      background-color: #333;
+      color: #fff;
+      padding: 20px 50px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    header h1 {
+      font-family: 'Brush Script MT', cursive;
+      font-size: 36px;
+    }
+    nav a {
+      color: #fff;
+      margin-left: 25px;
+      text-decoration: none;
+      font-weight: bold;
+    }
+    .hero {
+      display: flex;
+      justify-content: space-between;
+      padding: 40px 50px;
+      background-color: #fff;
+      align-items: center;
+    }
+    .hero-text {
+      max-width: 60%;
+    }
+    .hero-text h2 {
+      margin-bottom: 15px;
+    }
+    .hero-text p {
+      margin-bottom: 10px;
+      color: #555;
+    }
+    .hero-text .btn {
+      background: orange;
+      color: #fff;
+      padding: 10px 20px;
+      text-decoration: none;
+      display: inline-block;
+      border-radius: 5px;
+      margin-top: 10px;
+    }
+    .hero img {
+      max-width: 35%;
+      height: auto;
+<img scr="dragon.jpg"alt="dragon image">
+    }
+    .features {
+      padding: 40px 50px;
+      background-color: #fff;
+    }
+    .features h3 {
+      margin-bottom: 20px;
+    }
+    .cards {
+      display: flex;
+      gap: 20px;
+    }
+    .card {
+      background: #eee;
+      flex: 1;
+      padding: 15px;
+      text-align: center;
+    }
+    .card img {
+      width: 100%;
+      height: 150px;
+      background-color: #444;
+      margin-bottom: 10px;
+    }
+    .card h4 {
+      margin-bottom: 10px;
+    }
+    .card p {
+      color: #555;
+      font-size: 14px;]QS
+    }
+    .card .btn {
+      margin-top: 10px;
+      background: orange;
+      color: #fff;
+      padding: 8px 15px;
+      text-decoration: none;
+      border-radius: 4px;
+      display: inline-block;
+    }
+    footer {
+      display: flex;
+      background-color: #333;
+      color: white;
+      padding: 40px 50px;
+      justify-content: space-between;
+      flex-wrap: wrap;
+    }
+    .footer-section {
+      flex: 1;
+      min-width: 200px;
+      margin: 10px;
+    }
+    .footer-section h4 {
+      margin-bottom: 10px;
+    }
+    .post {
+      margin-bottom: 10px;
+    }
+    .post strong {
+      display: inline-block;
+      width: 50px;
+      background: #222;
+      text-align: center;
+      margin-right: 10px;
+      padding: 5px 0;
+    }
+    .social a {
+      display: block;
+      color: white;
+      text-decoration: none;
+      margin-bottom: 8px;
+    }
+    .copyright {
+      background-color: #222;
+      color: #ccc;
+      text-align: center;
+      padding: 10px;
+      font-size: 14px;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Header -->
+  <header>
+    <h1>Bloom</h1>
+    <nav>
+      <a href="#">Home</a>
+      <a href="#">About Us</a>
+      <a href="#">Services</a>
+      <a href="#">Portfolio</a>
+      <a href="#">Contact Us</a>
+    </nav>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="hero">
+    <div class="hero-text">
+      <h2>Lorem ipsum dolor sit amet</h2>
+      <p>Vestibulum pulvinar tincidunt placerat. Nulla porta porttitor sem, a ultrices magna feugiat quis. Nam ac diam ac libero posuere lacinia eget et libero.</p>
+      <p>Cras pretium odio eget felis consequat, ut adipiscing enim suscipit. Suspendisse hendrerit sapien blandit nisi sagittis dictum.</p>
+      <a class="btn" href="#">Learn More</a>
+    </div>
+    <img src="C:\Users\MONAASHREE S\Downloads\img.jpg">
+  </section>
+
+  <!-- Feature Cards -->
+  <section class="features">
+    <h3>This is a Heading</h3>
+    <div class="cards">
+      <div class="card">
+        <img src="">
+        <h4>Aliquam et iaculis sapien</h4>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+        <a class="btn" href="#">Learn More</a>
+      </div>
+      <div class="card">
+        <img src="">
+        <h4>Aliquam et iaculis sapien</h4>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+        <a class="btn" href="#">Learn More</a>
+      </div>
+      <div class="card">
+        <img src="">
+        <h4>Aliquam et iaculis sapien</h4>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+        <a class="btn" href="#">Learn More</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <div class="footer-section">
+      <h4>Latest Posts</h4>
+      <div class="post"><strong>JULY<br>27</strong> Aliquam et iaculis sapien</div>
+      <div class="post"><strong>JULY<br>27</strong> Aliquam et iaculis sapien</div>
+      <div class="post"><strong>JULY<br>27</strong> Aliquam et iaculis sapien</div>
+    </div>
+    <div class="footer-section">
+      <h4>About</h4>
+      <p>Vestibulum pulvinar tincidunt placerat. Nulla porta porttitor sem, a ultrices magna feugiat quis. Nam ac diam ac libero posuere lacinia eget et libero. Cras pretium odio eget felis consequat.</p>
+    </div>
+    <div class="footer-section social">
+      <h4>Stay Connected</h4>
+      <a href="#">Facebook</a>
+      <a href="#">Twitter</a>
+      <a href="#">RSS</a>
+      <a href="#">Google+</a>
+    </div>
+  </footer>
+
+  <!-- Copyright -->
+  <div class="copyright">
+    Copyright © 2013. All rights reserved Bloom Web Design
+  </div>
+
+</body>
+</html>
