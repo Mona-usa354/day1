@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Wave Form Ball</title>
+  <style>
+    body {
+      margin: 0;
+      background: #000;
+      overflow: hidden;
+    }
+
+    .ball {
+      position: absolute;
+      width: 30px;
+      height: 30px;
+      background: red;
+      border-radius: 50%;
+    }
+  </style>
+</head>
+<body>
+
+<div class="ball" id="ball"></div>
+
+<script>
+  const ball = document.getElementById("ball");
+  let angle = 0;
+
+  function animate() {
+    // Increase angle for wave movement
+    angle += 0.05;
+
+    // Move ball along x and y (y is sine of x)
+    const x = angle * 100; // controls speed across screen
+    const y = Math.sin(angle) * 100 + window.innerHeight / 2;
+
+    // Stop when ball goes off screen
+    if (x < window.innerWidth + 50) {
+      ball.style.left = x + "px";
+      ball.style.top = y + "px";
+      requestAnimationFrame(animate);
+    }
+  }
+
+  animate();
+</script>
+
+</body>
+</html>
